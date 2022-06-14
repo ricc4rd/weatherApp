@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #2F4F4F;
+    color: #fff;
+    
+
+}
+.nav-bar img {
+    margin: 20px 0 0 100px;
+    cursor:pointer;
+}
+.logo{
+    display: inline;
+    height: 4cm;
+    width: 4cm;
+    
+}
+
+.nav{
+    margin: -145px 0 0 48%;
+    align-items: center;
+}
+.nav li{
+    display: inline;
+    margin: 0 0 0 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav button{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #00b1f7, #0088e1);
+    cursor: pointer;
+}
+.nav button:hover{
+    background-image: linear-gradient(to right, #191970, #0088e1);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+.interface h1{
+    font-weight: normal;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 35px;
+
+}
+.news {
+    margin: 50px 0 50px 0;
+}
+.interface p{
+    letter-spacing: .5px;
+    font-size: 20px;
+}
+.material-symbols-outlined {
+  position: fixed;    
+  margin: 5px 0 0 50px;
+  margin-top: 15px;
+
+}
+
+.interface input{
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+    border-radius: 15;
+    font-size: 20px;
+    margin-bottom: 5px;
+    background-color: #705ed6;
+    letter-spacing: 1px;
+    color: #fff;
+}
+::placeholder{
+    font-size:20px ;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.interface button{
+    border: none;
+    outline: none;
+    margin-left: -10px;
+    padding: 20px 50px;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+    color: #f1f1f1;
+    background-image: linear-gradient(to right, #0088e1, #00b1f7);
+    cursor: pointer;
+}
+.interface button:hover{
+    background-image: linear-gradient(to right,#191970, #0088e1);
+}
+
+.info {
+    background-color: #556B2F;
+    width: 400px;
+    height: 500px;
+    margin-top: -25px;
+    border-radius: 20px;
+    
+}
+
+.info header{
+    background-color: #4719ba;
+    padding: 20px;
+    opacity: 0.3;
+
+}
+.header h1{
+    margin: 65px 0 10px 0;
+    text-indent: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.reportw{
+    margin-right: 20px;
+}
+.header h1::before{
+    content: "";
+    position: absolute;
+    top: 150px;
+    margin-left: -25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.info .report{
+    text-align: center;
+}
+#description{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: -50px;
+  
+
+}
+.info .output{
+    display: inline-flex;
+}
+.digit{
+    margin-left: 70px;
+
+}
+.digit h1{
+    /* text-shadow: 1px 1px 3px #000; */
+    font-size: 20px;
+}
+.digit span{
+    font-size: 19px;
+}
+.list_info{
+    margin: 10px 0 0 150px;
+    
+}
+
+.windy{
+    margin-top: 5px;
+}
+#wind::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 230px;
+    background-image: url('iconos/wind.png');
+    background-size: contain;
+}
+
+#humidity::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 230px;
+    margin-top: -5px;
+    background-image: url('iconos/humidity.png');
+    background-size: contain;
+}
+
+.convertor{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

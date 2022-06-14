@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="icon/title.jpg" >
-    <link href="">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- titulo -->
+    <link rel="icon" href="icon/title.jpg" />
+    <!-- icono -->
+    <link
+      href="https://fonts.google.com/icons?icon.set=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- script -->
     <script type="text/javascript" src="app.js"></script>
-
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- creamos el nav-var -->
+    <div class="nav-con">
+      <div class="nav-bar">
+        <img class="logo" src="iconos/logo-weather.png" />
+        <div class="nav">
+          <li>Home</li>
+          <li>Map</li>
+          <li>News</li>
+          <li>Contact</li>
+          <li><button>Get App</button></li>
+        </div>
+        <!-- nav-end -->
+      </div>
+      <!-- nav-bar end -->
+    </div>
+    <!-- nav-con end -->
+    <div class="container">
+      <div class="interface">
+        <h1>Different kind of weather</h1>
+        <h1>24/7 hours.</h1>
+        <div class="news">
+          <p>
+            We provide you a world wide weather forecast 
+          </p>
+          <p>Always make sure of the weather before you go outside </p>
+        </div>
+        <span class="material-symbols-outlined" style="font-size: 30px">
+          search
+        </span>
+        <input type="text" id="place" placeholder="Search cities!" />
+        <button onclick="weather(document.querySelector('#place').value)">
+          Let's go
+        </button>
+        <p>Best way to know the weather</p>
+      </div>
+      <!-- interface end -->
+      <div class="info">
+        <div class="header">
+          <h1 class="reportw">today weather report</h1>
+        </div>
+        <div class="report">
+          <img src="iconos/logo-weather.png" id="icon" width="200px" height="200px" />
+          <span id="description"></span>
+        </div>
+        <!-- end report -->
+        <div class="output">
+          <div class="digit">
+            <h1 id="deg">0&deg;C</h1>
+            <span id="min">0&deg;C</span>
+            <span id="max">/ 0&deg;C</span>
+          </div>
+          <!-- digit end -->
+          <div class="list_info">
+            <h3 class="windy" id="wind">0 mph</h3>
+            <h3 id="humidity">0 %</h3>
+          </div>
+          <!-- list end -->
+        </div>
+        <!-- end output -->
+        <div class="convertor">
+          <span id="celsius" onclick="con('celsius')">&deg;C</span>
+          <span id="farenheit" onclick="con('farenheit')">| &deg;F</span>
+        </div>
+        <!-- end convertor -->
+      </div>
+      <!-- end info -->
+    </div>
+  </body>
 </html>
